@@ -6,12 +6,12 @@ pipeline {
         S3_BUCKET   = 'yash-react-app'          // 🔁 Replace with actual bucket name
     }
 
-    stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm install --legacy-peer-deps'
+                sh '/usr/local/bin/npm install --legacy-peer-deps'
             }
         }
+
 
         stage('Build React App') {
             steps {
