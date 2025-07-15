@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build React App') {
             steps {
-                sh 'npm run build'
+                sh 'usr/local/bin/npm run build'
             }
         }
 
